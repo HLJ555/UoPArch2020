@@ -22,10 +22,42 @@
 <br><p>16 June 2020</p></td>
 			<td align="center"><iframe src="https://free.timeanddate.com/countdown/i78nii46/n300/cf12/cm0/cu1/ct0/cs1/ca0/co1/cr0/ss0/cacbbb/cpc000/pc000/tcfff/fs100/szw576/szh243/tatEx.%20Report/tacbbb/tptTime%20since%20Event%20started%20in/tpc000/iso2020-06-19T00:00:00/pa6" allowTransparency="true" frameborder="0" width="179" height="99"></iframe>
 <br><p>19 June 2020</p></td>
-			<td>a&nbsp;</td>
+			<td>&nbsp;</td>
 		</tr>
 	</tbody>
 </table>
-<p>a</p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
 </body>
 </html>
