@@ -3,87 +3,126 @@
 	<title>BA3 Architecture deadlines</title>
 	<style>
 		html, body {background-color: black;}
-		p {font-family: Arial, Helvetica, sans-serif; color:#BBBBBB; align="center";}
+		p {font-family: Arial, Helvetica, sans-serif; color:#BBBBBB; align="center"; font-weight: bold;}
+		table, th, td {border: 3px solid #232323;}
 	</style>
 </head>
 <body>
 <table align="center" border="0" cellpadding="6" cellspacing="0" style="width:500px;">
 	<tbody>
 		<tr>
-			<td align="center"><p id="review"></p><p>11 May 2020</p></td>
-			<td align="center"><p id="ppp"><p>06 June 2020</p></td>
-			<td align="center"><iframe src="https://free.timeanddate.com/countdown/i78nii46/n300/cf12/cm0/cu1/ct0/cs1/ca0/co1/cr0/ss0/cacbbb/cpc000/pc000/tcfff/fs100/szw576/szh243/tatDesign/tacbbb/tptTime%20since%20Event%20started%20in/tpc000/iso2020-06-12T00:00:00/pa6" allowTransparency="true" frameborder="0" width="122" height="99"></iframe>
-<br><p>12 June 2020</p></td>
+			<td valign="top" align="center" width="150px"><br><p>FINAL REVIEW</p><p id="review1"></p><p style="font-weight: normal;";>11 May 2020</p><br></td>
+			<td valign="top" align="center" width="150px"><br><p>PPP</p><p id="PPP1"></p><p style="font-weight: normal;";>06 June 2020</p></td>
+			<td valign="top" align="center" width="150px"><br><p>DESIGN PORTFOLIO</p><p id="design1"></p><p style="font-weight: normal;";>12 June 2020</p></td>
 		</tr>
 		<tr>
-			<td align="center"><iframe src="https://free.timeanddate.com/countdown/i78nii46/n300/cf12/cm0/cu1/ct0/cs1/ca0/co1/cr0/ss0/cacbbb/cpc000/pc000/tcfff/fs100/szw576/szh243/tatTech/tacbbb/tptTime%20since%20Event%20started%20in/tpc000/iso2020-06-16T00:00:00/pa6" allowTransparency="true" frameborder="0" width="88" height="99"></iframe>
-<br><p>16 June 2020</p></td>
-			<td align="center"><iframe src="https://free.timeanddate.com/countdown/i78nii46/n300/cf12/cm0/cu1/ct0/cs1/ca0/co1/cr0/ss0/cacbbb/cpc000/pc000/tcfff/fs100/szw576/szh243/tatEx.%20Report/tacbbb/tptTime%20since%20Event%20started%20in/tpc000/iso2020-06-19T00:00:00/pa6" allowTransparency="true" frameborder="0" width="179" height="99"></iframe>
-<br><p>19 June 2020</p></td>
+			<td valign="top" align="center" width="150px"><br><p>DESIGN TECH</p><p id="tech1"></p><p style="font-weight: normal;";>16 June 2020</p><br></td>
+			<td valign="top" align="center" width="150px"><br><p>EXH. REPORT</p><p id="exreport1"></p><p style="font-weight: normal;";>19 June 2020</p></td>
 			<td>&nbsp;</td>
 		</tr>
 	</tbody>
 </table>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 11, 2020 00:00:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "days ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("review").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
 
-<script>
-// Set the date we're counting down to
-var countDownDate2 = new Date("June 06, 2020 00:00:00").getTime();
+<br><br>
 
-// Update the count down every 1 second
-var y = setInterval(function() {
 
-  // Get today's date and time
-  var now2 = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate2 - now2;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days2 = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours2 = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes2 = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds2 = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("ppp").innerHTML = days + "days ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(y);
-    document.getElementById("ppp").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+<script> 
+var deadline1 = new Date("May 11, 2020 00:00:00").getTime(); 
+var x1 = setInterval(function() { 
+var now1 = new Date().getTime(); 
+var t1 = deadline1 - now1; 
+var days1 = Math.floor(t1 / (1000 * 60 * 60 * 24)); 
+var hours1 = Math.floor((t1%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes1 = Math.floor((t1 % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds1 = Math.floor((t1 % (1000 * 60)) / 1000); 
+document.getElementById("review1").innerHTML = days1 + " days";
+    if (t1 < 0) { 
+        clearInterval(x1); 
+        document.getElementById("review1").innerHTML = "EXPIRED"; 
+    } 
+}, 1000); 
+</script> 
 
-<p>v0.23</p>
+
+
+<script> 
+var deadline2 = new Date("Jun 6, 2020 00:00:00").getTime(); 
+var x2 = setInterval(function() { 
+var now2 = new Date().getTime(); 
+var t2 = deadline2 - now2; 
+var days2 = Math.floor(t2 / (1000 * 60 * 60 * 24)); 
+var hours2 = Math.floor((t2%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes2 = Math.floor((t2 % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds2 = Math.floor((t2 % (1000 * 60)) / 1000); 
+document.getElementById("PPP1").innerHTML = days2 + " days";
+    if (t2 < 0) { 
+        clearInterval(x2); 
+        document.getElementById("PPP1").innerHTML = "EXPIRED"; 
+    } 
+}, 1000); 
+</script> 
+
+
+
+
+<script> 
+var deadline3 = new Date("Jun 12, 2020 00:00:00").getTime(); 
+var x3 = setInterval(function() { 
+var now3 = new Date().getTime(); 
+var t3 = deadline3 - now3; 
+var days3 = Math.floor(t3 / (1000 * 60 * 60 * 24)); 
+var hours3 = Math.floor((t3%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes3 = Math.floor((t3 % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds3 = Math.floor((t3 % (1000 * 60)) / 1000); 
+document.getElementById("design1").innerHTML = days3 + " days";
+    if (t3 < 0) { 
+        clearInterval(x3); 
+        document.getElementById("design1").innerHTML = "EXPIRED"; 
+    } 
+}, 1000); 
+</script> 
+
+
+
+
+<script> 
+var deadline4 = new Date("Jun 16, 2020 00:00:00").getTime(); 
+var x4 = setInterval(function() { 
+var now4 = new Date().getTime(); 
+var t4 = deadline4 - now4; 
+var days4 = Math.floor(t4 / (1000 * 60 * 60 * 24)); 
+var hours4 = Math.floor((t4%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes4 = Math.floor((t4 % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds4 = Math.floor((t4 % (1000 * 60)) / 1000); 
+document.getElementById("tech1").innerHTML = days4 + " days";
+    if (t4 < 0) { 
+        clearInterval(x4); 
+        document.getElementById("tech1").innerHTML = "EXPIRED"; 
+    } 
+}, 1000); 
+</script> 
+
+
+
+
+<script> 
+var deadline5 = new Date("Jun 19, 2020 00:00:00").getTime(); 
+var x5 = setInterval(function() { 
+var now5 = new Date().getTime(); 
+var t5 = deadline5 - now5; 
+var days5 = Math.floor(t5 / (1000 * 60 * 60 * 24)); 
+var hours5 = Math.floor((t5%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes5 = Math.floor((t5 % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds5 = Math.floor((t5 % (1000 * 60)) / 1000); 
+document.getElementById("exreport1").innerHTML = days5 + " days";
+    if (t5 < 0) { 
+        clearInterval(x5); 
+        document.getElementById("exreport1").innerHTML = "EXPIRED"; 
+    } 
+}, 1000); 
+</script> 
+<!--Huw Jones-->
 </body>
 </html>
