@@ -1,10 +1,11 @@
 <html>
 <head>
 	<title>BA3 Architecture deadlines</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 	<style>
 		html {height: 100%;}
-		body {background-color: black !important;}
-		p {font-family: Arial, Helvetica, sans-serif; color:#BBBBBB; align="center"; font-weight: bold;}
+		body {background-color: black !important; zoom:150%;}
+		p {font-family: 'Roboto', sans-serif; color:#BBBBBB; align="center"; font-weight: 100;}
 		table, th, td {border: 3px solid #232323;}
 	</style>
 </head>
@@ -13,13 +14,13 @@
 <table align="center" border="0" cellpadding="6" cellspacing="0" style="width:500px;">
 	<tbody>
 		<tr>
-			<td valign="top" align="center" width="150px"><br><p>FINAL REVIEW</p><p id="review1"></p><p style="font-weight: normal;";>11 May 2020</p><br></td>
-			<td valign="top" align="center" width="150px"><br><p>PPP</p><p id="PPP1"></p><p style="font-weight: normal;";>06 June 2020</p></td>
-			<td valign="top" align="center" width="150px"><br><p>DESIGN PORTFOLIO</p><p id="design1"></p><p style="font-weight: normal;";>12 June 2020</p></td>
+			<td valign="top" align="center" width="150px"><br><p>FINAL REVIEW</p><p id="review1" style="font-weight:400;"></p><p style="font-size:80%;">11 MAY 2020</p><br></td>
+			<td valign="top" align="center" width="150px"><br><p>PPP</p><p id="PPP1" style="font-weight:400;"></p><p style="font-size:80%;">06 JUNE 2020</p></td>
+			<td valign="top" align="center" width="150px"><br><p>DESIGN PORTFOLIO</p><p id="design1" style="font-weight:400;"></p><p style="font-size:80%;">12 JUNE 2020</p></td>
 		</tr>
 		<tr>
-			<td valign="top" align="center" width="150px"><br><p>DESIGN TECH</p><p id="tech1"></p><p style="font-weight: normal;";>16 June 2020</p><br></td>
-			<td valign="top" align="center" width="150px"><br><p>EXH. REPORT</p><p id="exreport1"></p><p style="font-weight: normal;";>19 June 2020</p></td>
+			<td valign="top" align="center" width="150px"><br><p>DESIGN TECH</p><p id="tech1" style="font-weight:400;"></p><p style="font-size:80%;">16 JUNE 2020</p><br></td>
+			<td valign="top" align="center" width="150px"><br><p>EXH. REPORT</p><p id="exreport1" style="font-weight:400;"></p><p style="font-size:80%;">19 JUNE 2020</p></td>
 			<td>&nbsp;</td>
 		</tr>
 	</tbody>
@@ -36,7 +37,7 @@ var days1 = Math.floor(t1 / (1000 * 60 * 60 * 24));
 var hours1 = Math.floor((t1%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
 var minutes1 = Math.floor((t1 % (1000 * 60 * 60)) / (1000 * 60)); 
 var seconds1 = Math.floor((t1 % (1000 * 60)) / 1000); 
-document.getElementById("review1").innerHTML = days1 + " days";
+document.getElementById("review1").innerHTML = days1 + " DAYS";
     if (t1 < 0) { 
         clearInterval(x1); 
         document.getElementById("review1").innerHTML = "EXPIRED"; 
@@ -55,7 +56,7 @@ var days2 = Math.floor(t2 / (1000 * 60 * 60 * 24));
 var hours2 = Math.floor((t2%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
 var minutes2 = Math.floor((t2 % (1000 * 60 * 60)) / (1000 * 60)); 
 var seconds2 = Math.floor((t2 % (1000 * 60)) / 1000); 
-document.getElementById("PPP1").innerHTML = days2 + " days";
+document.getElementById("PPP1").innerHTML = days2 + " DAYS";
     if (t2 < 0) { 
         clearInterval(x2); 
         document.getElementById("PPP1").innerHTML = "EXPIRED"; 
@@ -75,7 +76,7 @@ var days3 = Math.floor(t3 / (1000 * 60 * 60 * 24));
 var hours3 = Math.floor((t3%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
 var minutes3 = Math.floor((t3 % (1000 * 60 * 60)) / (1000 * 60)); 
 var seconds3 = Math.floor((t3 % (1000 * 60)) / 1000); 
-document.getElementById("design1").innerHTML = days3 + " days";
+document.getElementById("design1").innerHTML = days3 + " DAYS";
     if (t3 < 0) { 
         clearInterval(x3); 
         document.getElementById("design1").innerHTML = "EXPIRED"; 
@@ -95,7 +96,7 @@ var days4 = Math.floor(t4 / (1000 * 60 * 60 * 24));
 var hours4 = Math.floor((t4%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
 var minutes4 = Math.floor((t4 % (1000 * 60 * 60)) / (1000 * 60)); 
 var seconds4 = Math.floor((t4 % (1000 * 60)) / 1000); 
-document.getElementById("tech1").innerHTML = days4 + " days";
+document.getElementById("tech1").innerHTML = days4 + " DAYS";
     if (t4 < 0) { 
         clearInterval(x4); 
         document.getElementById("tech1").innerHTML = "EXPIRED"; 
@@ -115,7 +116,7 @@ var days5 = Math.floor(t5 / (1000 * 60 * 60 * 24));
 var hours5 = Math.floor((t5%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
 var minutes5 = Math.floor((t5 % (1000 * 60 * 60)) / (1000 * 60)); 
 var seconds5 = Math.floor((t5 % (1000 * 60)) / 1000); 
-document.getElementById("exreport1").innerHTML = days5 + " days";
+document.getElementById("exreport1").innerHTML = days5 + " DAYS";
     if (t5 < 0) { 
         clearInterval(x5); 
         document.getElementById("exreport1").innerHTML = "EXPIRED"; 
